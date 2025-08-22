@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ETL Code Generator</title>
+    <link rel="stylesheet" href="ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="ui-frame">
+
+            
+            <div class="main-content">
+                <!-- Data Source Section -->
+                <div class="data-section source-section">
+                    <h3>Data Source</h3>
+                    <div class="input-field">
+                        <select class="dropdown">
+                            <option value="">Select data source...</option>
+                            <option value="database">Database</option>
+                            <option value="file">File</option>
+                            <option value="api">API</option>
+                        </select>
+                    </div>
+                    <div class="icons-container">
+                        <div class="icon-item">
+                            <i class="fas fa-database"></i>
+                            <span>Database</span>
+                        </div>
+                        <div class="icon-item">
+                            <i class="fas fa-folder-open"></i>
+                            <span>File</span>
+                        </div>
+                        <div class="icon-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Data Destination Section -->
+                <div class="data-section destination-section">
+                    <h3>Data Destination</h3>
+                    <div class="input-field">
+                        <select class="dropdown">
+                            <option value="">Select destination...</option>
+                            <option value="aws">AWS</option>
+                            <option value="azure">Azure</option>
+                            <option value="gcp">Google Cloud</option>
+                        </select>
+                    </div>
+                    <div class="icons-container">
+                        <div class="icon-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                        <div class="icon-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Azure</span>
+                        </div>
+                        <div class="icon-item">
+                            <i class="fab fa-google"></i>
+                            <span>Google Cloud</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Prompt Input Section -->
+            <div class="prompt-section">
+                <div class="prompt-input">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" placeholder="Enter prompt for ETL Code ....." class="prompt-field">
+                    <i class="fas fa-microphone mic-icon"></i>
+                </div>
+                <button class="enter-button" onclick="handleEnterClick()">
+                    <i class="fas fa-arrow-right"></i>
+                    Enter
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="ui.js"></script>
+</body>
+</html>
